@@ -1,0 +1,15 @@
+        /*
+        operations = new Array();
+        //console.log(getoperations);
+        while(getoperations.includes(",")){
+          var el = getoperations.substring(0,getoperations.indexOf(","));
+          operations.push(el);
+          getoperations = getoperations.substring(getoperations.indexOf(",")+1);
+        }
+        */
+
+
+mongo "mongodb+srv://cluster0.vpous.mongodb.net/mathdoku_app" --username admin
+
+db.users.update({username: "Math"},{$set:{puzzlesCompleted:"10000000000000000"}})
+db.users.find({username: "Math"})
